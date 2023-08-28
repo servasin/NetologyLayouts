@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+body {
+  margin: 0;
+}
+
+.central-container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.toolbar{
+  overflow: auto;
+}
+.toolbar .material-icons{
+  padding: 10px;
+  float: right;
+  font-size: 36px;
+  color: gray;
+}
+
+.toolbar .material-icons::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.cards-view {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.shop-card {
+  height: 250px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 5px 10px 5px grey;
+  border-radius: 20px;
+}
+
+.shop-card-img {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  z-index: -1;
+}
